@@ -23,12 +23,12 @@
         // تنفيذ الوظيفة عند تحميل الصفحة
         window.onload = function() {
             const token = generateToken(); // توليد رمز عشوائي
-            const targetUrl = 'https://arabx.chat/chat.html'; // ضع هنا رابط الموقع الهدف
+            const targetUrl = 'https://fnon.live'; // ضع هنا رابط الموقع الهدف
 
             // التحقق من مصدر الصفحة
             if (!document.referrer || !document.referrer.includes(window.location.host)) {
                 // إذا كان الرابط فُتح خارج الـ iframe، إعادة التوجيه
-                window.location.href = 'https://arabx.chat/chat.html'; // ضع هنا رابط الموقع الآخر
+                window.location.href = 'https://chat.fnon.live/host.html'; // ضع هنا رابط الموقع الآخر
             } else {
                 // إعداد iframe
                 const iframe = document.createElement('iframe');
