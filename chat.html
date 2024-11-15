@@ -3,25 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protected Access</title>
-    <script>
-        // الكود المحدد المسموح به
-        const allowedCode = "dd2dbc175d22a689";
-
-        // التحقق من وجود الكود في الرابط
-        const params = new URLSearchParams(window.location.search);
-        const code = params.get('code');
-
-        // شرط السماح أو الحظر
-        if (code !== allowedCode) {
-            // إذا لم يتم توفير الكود الصحيح، يتم حظر الوصول
-            alert("Access Denied! Invalid Code.");
-            window.location.href = "https://tlgawy.com"; // إعادة توجيه لموقع آخر عند الخطأ
-        }
-    </script>
+    <title>Protected Site</title>
 </head>
 <body>
     <h1>مرحبًا بك في الموقع المحمي!</h1>
-    <p>تم التحقق من الكود بنجاح، يمكنك الآن الوصول.</p>
+    <iframe 
+        src="https://site.site.com/?code=dd2dbc175d22a689" 
+        allow="camera;gyroscope;accelerometer;magnetometer;xr-spatial-tracking;microphone;" 
+        style="position: fixed; top: 0px; bottom: 0px; right: 0px; width: 100%; border: none; margin: 0; padding: 0; overflow: hidden; z-index: 999999; height: 100%;">
+    </iframe>
 </body>
 </html>
